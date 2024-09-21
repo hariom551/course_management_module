@@ -12,9 +12,10 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          {/* <Route path="/login" element={<Login />} />
           <Route path="/sms" element={<Sms />} />
-          <Route path="/whatsapp" element={<Whatsapp />} />
+          <Route path="/whatsapp" element={<Whatsapp />} /> */}
+          
         </Route>
       </Routes>
     </Router>

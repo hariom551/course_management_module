@@ -1,5 +1,5 @@
 
-import mysql from 'mysql2'; // Change to mysql2 if you are using mysql2
+import mysql from 'mysql2'; 
 
 
 const pool = mysql.createPool({
@@ -8,7 +8,7 @@ const pool = mysql.createPool({
     password: "",
     database: "course_management",
     connectionLimit:  10,
-    connectTimeout: 10000, // 10 seconds
+    connectTimeout: 10000, 
 });
 
 
