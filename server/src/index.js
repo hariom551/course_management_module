@@ -66,6 +66,32 @@ app.post('/api/whatsapp', async (req, res) => {
   }
 });
 
+
+
+app.post('/api/course-categories', async (req, res) => {
+  const { category_name, description } = req.body;
+console.log(req.body);
+  if (!category_name || !description) {
+    return res.status(400).json({ error: 'Both category name and description are required.' });
+  }
+
+  try {
+    const [result] = await pool.query(
+      'INSERT INTO course_categories (category_name, description) VALUES (?, ?)',
+      [category_name, description]
+    );
+
+    res.status(201).json({
+      message: 'Category created successfully',
+      categoryId: result.insertId,
+    });
+  } catch (error) {
+    
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });

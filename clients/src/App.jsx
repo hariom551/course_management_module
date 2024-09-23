@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Sms from './components/Sms';
 import Whatsapp from './components/Whatsapp';
 import { Home } from './components/Home';
+import CreateCategory from './components/CreateCategory';
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/login" element={<Login />} />
-          <Route path="/sms" element={<Sms />} />
-          <Route path="/whatsapp" element={<Whatsapp />} /> */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/createCategory" element={<CreateCategory />} />
+          {/* <Route path="/whatsapp" element={<Whatsapp />} /> */}
           
         </Route>
       </Routes>

@@ -32,7 +32,28 @@ function SideNavBar({ show }) {
             <nav className="pt-12">
                 <ul className="list-none p-0">
                     <li><h5 className="text-lg font-bold text-white">NAVIGATION</h5></li>
+
                     <li className="my-2">
+                        <Link 
+                            to="/" 
+                            className="flex items-center gap-2 p-2 text-base text-[#eaecef] rounded hover:bg-[#172b4d] transition-colors duration-200"
+                        >
+                            <TbMessageFilled className="text-2xl" />
+                            Home
+                        </Link>
+                    </li>
+
+                    <li className="my-2">
+                        <Link 
+                            to="/createCategory" 
+                            className="flex items-center gap-2 p-2 text-base text-[#eaecef] rounded hover:bg-[#172b4d] transition-colors duration-200"
+                        >
+                            <TbMessageFilled className="text-2xl" />
+                            Create Category
+                        </Link>
+                    </li>
+
+                    {/* <li className="my-2">
                         <Link 
                             to="/sms" 
                             className="flex items-center gap-2 p-2 text-base text-[#eaecef] rounded hover:bg-[#172b4d] transition-colors duration-200"
@@ -40,8 +61,8 @@ function SideNavBar({ show }) {
                             <TbMessageFilled className="text-2xl" />
                             SMS
                         </Link>
-                    </li>
-                    <li className="my-2">
+                    </li> */}
+                    {/* <li className="my-2">
                         <Link 
                             to="/whatsapp" 
                             className="flex items-center gap-2 p-2 text-base text-[#eaecef] rounded hover:bg-[#172b4d] transition-colors duration-200"
@@ -49,8 +70,8 @@ function SideNavBar({ show }) {
                             <IoLogoWhatsapp className="text-2xl" />
                             WHATSAPP
                         </Link>
-                    </li>
-                    <li className="my-2">
+                    </li> */}
+                    {/* <li className="my-2">
                         <Link 
                             to="/email" 
                             className="flex items-center gap-2 p-2 text-base text-[#eaecef] rounded hover:bg-[#172b4d] transition-colors duration-200"
@@ -58,7 +79,7 @@ function SideNavBar({ show }) {
                             <MdEmail className="text-2xl" />
                             EMAIL
                         </Link>
-                    </li>
+                    </li> */}
                     <li className="my-2">
                         <button
                             onClick={handleLogout}
