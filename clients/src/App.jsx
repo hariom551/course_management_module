@@ -6,6 +6,7 @@ import Sms from './components/Sms';
 import Whatsapp from './components/Whatsapp';
 import { Home } from './components/Home';
 import CreateCategory from './components/CreateCategory';
+import CreateCourseForm from './components/CreateCourseForm';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/createCategory" element={<CreateCategory />} />
+          <Route path="/CreateCourse" element={<CreateCourseForm />} />
           {/* <Route path="/whatsapp" element={<Whatsapp />} /> */}
           
         </Route>

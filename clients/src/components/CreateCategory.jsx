@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Import axios
+import axios from 'axios'; 
 
 const CreateCategory = () => {
     const [categoryName, setCategoryName] = useState('');
@@ -10,19 +10,13 @@ const CreateCategory = () => {
         const newCategory = { category_name: categoryName, description };
 
         try {
-            const response = await axios.post('/api/course-categories', newCategory); // Make the POST request
-            console.log('Category created:', response.data);
-
-            // Optionally, display success notification
+            const response = await axios.post('/api/course-categories', newCategory); 
+            
             alert('Category created successfully!');
 
-            // Reset form fields after submission
             setCategoryName('');
             setDescription('');
         } catch (error) {
-            console.error('Error creating category:', error);
-            
-            // Optionally, display error notification
             alert('Error creating category. Please try again.');
         }
     };

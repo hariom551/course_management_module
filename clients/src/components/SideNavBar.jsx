@@ -53,6 +53,16 @@ function SideNavBar({ show }) {
                         </Link>
                     </li>
 
+                    <li className="my-2">
+                        <Link 
+                            to="/CreateCourse" 
+                            className="flex items-center gap-2 p-2 text-base text-[#eaecef] rounded hover:bg-[#172b4d] transition-colors duration-200"
+                        >
+                            <TbMessageFilled className="text-2xl" />
+                            Create New Course
+                        </Link>
+                    </li>
+
                     {/* <li className="my-2">
                         <Link 
                             to="/sms" 
