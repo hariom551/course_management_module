@@ -190,7 +190,7 @@ const AdmissionForm = () => {
         <fieldset className="mb-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
-              <label className="block text-gray-600 mb-2">Sex</label>
+              <label className="block text-gray-600 mb-2">Gender</label>
               <div className="flex items-center">
                 <label className="mr-4">
                   <input
