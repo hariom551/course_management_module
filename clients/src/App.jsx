@@ -7,6 +7,7 @@ import Whatsapp from './components/Whatsapp';
 import { Home } from './components/Home';
 import CreateCategory from './components/CreateCategory';
 import CreateCourseForm from './components/CreateCourseForm';
+import AdmissionForm from './components/AdmissionForm';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/createCategory" element={<CreateCategory />} />
           <Route path="/CreateCourse" element={<CreateCourseForm />} />
+          <Route path="/AddmisionForm" element={<AdmissionForm />} />
           {/* <Route path="/whatsapp" element={<Whatsapp />} /> */}
           
         </Route>
